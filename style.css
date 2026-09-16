@@ -136,12 +136,10 @@ button:hover {
 }
 .ship {
     display: block;
-
-    width: 420px;
-    max-width: 80%;
-
-    margin: 35px auto 0;
-
+    width: 280px;
+    max-width: 65%;
+    height: auto;
+    margin: 30px auto 0;
     opacity: 0.95;
 }
 .bottom-text {
