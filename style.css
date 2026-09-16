@@ -134,7 +134,16 @@ button {
 button:hover {
     background-color: #063847;
 }
+.ship {
+    display: block;
 
+    width: 420px;
+    max-width: 80%;
+
+    margin: 35px auto 0;
+
+    opacity: 0.95;
+}
 .bottom-text {
     margin-top: 30px;
     font-family: Georgia, "Times New Roman", serif;
