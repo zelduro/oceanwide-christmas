@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OceanWide Christmas Registration</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #F4F0E5;
+            color: #063847;
+            font-family: Georgia, "Times New Roman", serif;
+            padding: 30px 15px;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 750px;
+            margin: auto;
+            background-color: #F4F0E5;
+            border: 2px solid #063847;
+            padding: 40px;
+        }
+
+        .logo {
+            display: block;
+            width: 190px;
+            max-width: 70%;
+            margin: 0 auto 25px;
+        }
+
+        .top-decoration {
+            text-align: center;
+            font-size: 35px;
+            color: #B52D30;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin: 10px 0 30px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #007A87;
+        }
+
+        .event-box {
+            background-color: #DCE8E5;
+            border: 2px solid #3395A0;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .event-box strong {
+            display: block;
+            font-family: Arial, sans-serif;
+            margin-bottom: 8px;
+        }
+
+        .event-box p {
+            margin: 5px 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .section-title {
+            margin: 30px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3395A0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            color: #007A87;
+        }
+
+        label {
+            display: block;
+            margin: 18px 0 7px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #3395A0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: 2px solid #007A87;
+        }
+
+        .required {
+            color: #B52D30;
+        }
+
+        .guest-note {
+            background-color: #fff;
+            border-left: 4px solid #B52D30;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .checkbox-group {
+            margin-top: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: normal;
+            margin: 12px 0;
+        }
+
+        .checkbox-group input {
+            width: auto;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            margin-top: 35px;
+            padding: 16px;
+            border: none;
+            background-color: #007A87;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #063847;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            color: #007A87;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px 10px;
+            }
+
+            .form-container {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .logo {
+                width: 160px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="form-container">
+
+        <div class="top-decoration">✦</div>
+
+        <img
+            src="oceanwidelogo.jpg"
+            alt="OceanWide Expeditions"
+            class="logo"
+        >
+
+        <h1>REGISTRATION</h1>
+
+        <p class="subtitle">
+            CHRISTMAS CELEBRATION 2026
+        </p>
+
+        <div class="event-box">
+
+            <strong>OCEANWIDE EXPEDITIONS</strong>
+
+            <p>07 DECEMBER 2026</p>
+            <p>Registration: 9:00 AM</p>
+            <p>Event: 10:00 AM</p>
+
+        </div>
+
+        <form id="registrationForm">
+
+            <div class="section-title">
+                SEAFARER INFORMATION
+            </div>
+
+            <label for="name">
+                Full Name <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="position">
+                Position <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="position"
+                name="position"
+                placeholder="Enter your position"
+                required
+            >
+
+            <label for="mobile">
+                Mobile Number <span class="required">*</span>
+            </label>
+
+            <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="Enter your mobile number"
+                required
+            >
+
+            <label for="email">
+                Email Address <span class="required">*</span>
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <div class="section-title">
+                ATTENDANCE
+            </div>
+
+            <label for="attendance">
+                Will you be attending the event? <span class="required">*</span>
+            </label>
+
+            <select id="attendance" name="attendance" required>
+                <option value="">Please select</option>
+                <option value="yes">Yes, I will attend</option>
+                <option value="no">No, I will not attend</option>
+            </select>
+
+            <div class="section-title">
+                GUEST INFORMATION
+            </div>
+
+            <div class="guest-note">
+                <strong>Guest Policy</strong><br>
+                A maximum of 2 adults and 1 child may attend.
+                If the seafarer attends, the seafarer counts as 1 adult,
+                allowing 1 additional adult guest and 1 child.
+                If the seafarer does not attend, up to 2 adult guests and
+                1 child may attend. Children must be 10 years old or below.
+                Guests aged 11 and above are considered adults.
+            </div>
+
+            <label for="adultGuests">
+                Number of Adult Guests
+            </label>
+
+            <select id="adultGuests" name="adultGuests">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+
+            <label for="childGuests">
+                Number of Children
+            </label>
+
+            <select id="childGuests" name="childGuests">
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+
+            <label for="childAge">
+                Child's Age
+            </label>
+
+            <input
+                type="number"
+                id="childAge"
+                name="childAge"
+                min="1"
+                max="10"
+                placeholder="Enter child's age"
+            >
+
+            <button type="submit">
+                SUBMIT REGISTRATION
+            </button>
+
+        </form>
+
+        <a href="index.html" class="back-link">
+            ← Back to Event Page
+        </a>
+
+    </main>
+
+    <script>
+        const form = document.getElementById("registrationForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            alert("Thank you! Your registration has been received.");
+
+            form.reset();
+        });
+    </script>
+
+</body>
+
+</html>
