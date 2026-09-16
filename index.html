@@ -5,14 +5,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>OceanWide Christmas Celebration 2026</title>
+    <title>OceanWide Christmas Registration</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #F4F0E5;
+            color: #063847;
+            font-family: Georgia, "Times New Roman", serif;
+            padding: 30px 15px;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 750px;
+            margin: auto;
+            background-color: #F4F0E5;
+            border: 2px solid #063847;
+            padding: 40px;
+        }
+
+        .logo {
+            display: block;
+            width: 190px;
+            max-width: 70%;
+            margin: 0 auto 25px;
+        }
+
+        .top-decoration {
+            text-align: center;
+            font-size: 35px;
+            color: #B52D30;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin: 10px 0 30px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #007A87;
+        }
+
+        .event-box {
+            background-color: #DCE8E5;
+            border: 2px solid #3395A0;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .event-box strong {
+            display: block;
+            font-family: Arial, sans-serif;
+            margin-bottom: 8px;
+        }
+
+        .event-box p {
+            margin: 5px 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section-title {
+            margin: 0 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3395A0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            color: #007A87;
+        }
+
+        label {
+            display: block;
+            margin: 18px 0 7px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #3395A0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: 2px solid #007A87;
+        }
+
+        .required {
+            color: #B52D30;
+        }
+
+        .guest-note {
+            background-color: white;
+            border-left: 4px solid #B52D30;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .guest-card {
+            background-color: #DCE8E5;
+            border: 1px solid #3395A0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .guest-card h3 {
+            margin: 0 0 10px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            color: #007A87;
+            letter-spacing: 1px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            margin-top: 35px;
+            padding: 16px;
+            border: none;
+            background-color: #007A87;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #063847;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            color: #007A87;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px 10px;
+            }
+
+            .form-container {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .logo {
+                width: 160px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <main class="hero">
+    <main class="form-container">
 
         <div class="top-decoration">✦</div>
 
@@ -22,61 +216,398 @@
             class="logo"
         >
 
-        <p class="small-text">A SPECIAL CHRISTMAS VOYAGE</p>
+        <h1>REGISTRATION</h1>
 
-        <h1>ALL ABOARD</h1>
-
-        <p class="for-text">FOR</p>
-
-        <h2>CHRISTMAS</h2>
-
-        <p class="event-text">
-            OCEANWIDE EXPEDITIONS<br>
+        <p class="subtitle">
             CHRISTMAS CELEBRATION 2026
         </p>
 
-        <div class="ticket">
+        <div class="event-box">
+            <strong>OCEANWIDE EXPEDITIONS</strong>
+            <p>07 DECEMBER 2026</p>
+            <p>Registration: 9:00 AM</p>
+            <p>Event: 10:00 AM</p>
+        </div>
 
-            <p class="ticket-title">VOYAGE DETAILS</p>
 
-            <div class="details">
+        <form id="registrationForm">
 
-                <div>
-                    <span>DATE</span>
-                    <strong>07 DECEMBER 2026</strong>
+            <!-- SEAFARER INFORMATION -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    SEAFARER INFORMATION
                 </div>
 
-                <div>
-                    <span>REGISTRATION</span>
-                    <strong>9:00 AM</strong>
+                <label for="name">
+                    Full Name <span class="required">*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="position">
+                    Position <span class="required">*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="position"
+                    name="position"
+                    placeholder="Enter your position"
+                    required
+                >
+
+                <label for="mobile">
+                    Mobile Number <span class="required">*</span>
+                </label>
+
+                <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="Enter your mobile number"
+                    required
+                >
+
+                <label for="email">
+                    Email Address <span class="required">*</span>
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+            </div>
+
+
+            <!-- ATTENDANCE -->
+
+            <div class="section">
+
+                <div class="section-title">
+                    ATTENDANCE
                 </div>
 
-                <div>
-                    <span>EVENT</span>
-                    <strong>10:00 AM</strong>
+                <label for="attendance">
+                    Will the seafarer attend the event?
+                    <span class="required">*</span>
+                </label>
+
+                <select id="attendance" name="attendance" required>
+
+                    <option value="">
+                        Please select
+                    </option>
+
+                    <option value="yes">
+                        Yes, I will attend
+                    </option>
+
+                    <option value="no">
+                        No, I will not attend
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- GUEST INFORMATION -->
+
+            <div
+                class="section hidden"
+                id="guestSection"
+            >
+
+                <div class="section-title">
+                    GUEST INFORMATION
+                </div>
+
+                <div class="guest-note" id="guestPolicy">
+                </div>
+
+
+                <!-- GUEST 1 -->
+
+                <div class="guest-card">
+
+                    <h3>
+                        ADULT GUEST 1
+                    </h3>
+
+                    <label for="guest1Name">
+                        Full Name <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="guest1Name"
+                        name="guest1Name"
+                        placeholder="Enter guest's full name"
+                    >
+
+                </div>
+
+
+                <!-- GUEST 2 -->
+
+                <div
+                    class="guest-card hidden"
+                    id="guest2Card"
+                >
+
+                    <h3>
+                        ADULT GUEST 2
+                    </h3>
+
+                    <label for="guest2Name">
+                        Full Name <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="guest2Name"
+                        name="guest2Name"
+                        placeholder="Enter guest's full name"
+                    >
+
+                </div>
+
+
+                <!-- CHILD -->
+
+                <div class="guest-card">
+
+                    <h3>
+                        CHILD
+                    </h3>
+
+                    <label for="hasChild">
+                        Will you be bringing a child?
+                        <span class="required">*</span>
+                    </label>
+
+                    <select
+                        id="hasChild"
+                        name="hasChild"
+                    >
+
+                        <option value="">
+                            Please select
+                        </option>
+
+                        <option value="yes">
+                            Yes
+                        </option>
+
+                        <option value="no">
+                            No
+                        </option>
+
+                    </select>
+
+
+                    <div
+                        id="childDetails"
+                        class="hidden"
+                    >
+
+                        <label for="childName">
+                            Child's Full Name
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="childName"
+                            name="childName"
+                            placeholder="Enter child's full name"
+                        >
+
+
+                        <label for="childAge">
+                            Child's Age
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="number"
+                            id="childAge"
+                            name="childAge"
+                            min="1"
+                            max="10"
+                            placeholder="10 or below"
+                        >
+
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
 
-        <img
-            src="ship.png"
-            alt="OceanWide expedition ship"
-            class="ship"
-        >
+            <button type="submit">
+                SUBMIT REGISTRATION
+            </button>
 
-        <button id="startButton">
-            REGISTER NOW
-        </button>
+        </form>
 
-        <p class="bottom-text">
-            YOUR VOYAGE AWAITS ⚓
-        </p>
+
+        <a href="index.html" class="back-link">
+            ← Back to Event Page
+        </a>
 
     </main>
 
-    <script src="script.js"></script>
+
+    <script>
+
+        const attendance = document.getElementById("attendance");
+
+        const guestSection = document.getElementById("guestSection");
+
+        const guest2Card = document.getElementById("guest2Card");
+
+        const guestPolicy = document.getElementById("guestPolicy");
+
+        const guest1Name = document.getElementById("guest1Name");
+
+        const guest2Name = document.getElementById("guest2Name");
+
+        const hasChild = document.getElementById("hasChild");
+
+        const childDetails = document.getElementById("childDetails");
+
+        const childName = document.getElementById("childName");
+
+        const childAge = document.getElementById("childAge");
+
+        const form = document.getElementById("registrationForm");
+
+
+        attendance.addEventListener("change", function() {
+
+            if (attendance.value === "yes") {
+
+                guestSection.classList.remove("hidden");
+
+                guest2Card.classList.add("hidden");
+
+                guestPolicy.innerHTML =
+                    "<strong>Guest Policy</strong><br>" +
+                    "Since the seafarer will attend, " +
+                    "the seafarer counts as 1 adult. " +
+                    "You may bring a maximum of 1 adult guest " +
+                    "and 1 child aged 10 or below.";
+
+                guest2Name.required = false;
+
+            }
+
+            else if (attendance.value === "no") {
+
+                guestSection.classList.remove("hidden");
+
+                guest2Card.classList.remove("hidden");
+
+                guestPolicy.innerHTML =
+                    "<strong>Guest Policy</strong><br>" +
+                    "Since the seafarer will not attend, " +
+                    "you may bring a maximum of 2 adult guests " +
+                    "and 1 child aged 10 or below.";
+
+                guest2Name.required = false;
+
+            }
+
+            else {
+
+                guestSection.classList.add("hidden");
+
+            }
+
+        });
+
+
+        hasChild.addEventListener("change", function() {
+
+            if (hasChild.value === "yes") {
+
+                childDetails.classList.remove("hidden");
+
+                childName.required = true;
+
+                childAge.required = true;
+
+            }
+
+            else {
+
+                childDetails.classList.add("hidden");
+
+                childName.required = false;
+
+                childAge.required = false;
+
+                childName.value = "";
+
+                childAge.value = "";
+
+            }
+
+        });
+
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+
+            if (hasChild.value === "yes") {
+
+                const age = Number(childAge.value);
+
+                if (age < 1 || age > 10) {
+
+                    alert(
+                        "Children must be 10 years old or below."
+                    );
+
+                    childAge.focus();
+
+                    return;
+
+                }
+
+            }
+
+
+            alert(
+                "Thank you! Your registration has been received."
+            );
+
+            form.reset();
+
+            guestSection.classList.add("hidden");
+
+            guest2Card.classList.add("hidden");
+
+            childDetails.classList.add("hidden");
+
+        });
+
+    </script>
 
 </body>
 
